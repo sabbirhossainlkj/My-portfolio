@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFEFA;
+}
+
+/* common class */
+.btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    /* color: white; */
+    box-shadow: 0 11px 31px 0 #8C8C8C;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: #872BFF;
+    color: #ffffff;
+    border: 2px solid #872BFF;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+}
+
+.btn-white {
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    border: 2px solid #872BFF;
+}
+
+.container {
+    width: 86.8%;
+    margin: 0 auto;
+}
+
+/* hero section */
+#hero {
+    /* margin */
+    padding-top: 20px;
+    background-image: url("image/Hero-bg.png");
+    margin-bottom: 150px;
+}
+
+#hero-container {
+    display: flex;
+    width: 86.8%;
+    /* background-color: yellow; */
+    margin: 0 auto;
+    align-items: end;
+    justify-content: space-between;
+    gap: 40px;
+    padding-right: 20px;
+}
+
+#hero-content {
+    padding-bottom: 100px;
+}
+
+#hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+#hero-content h1 span {
+    color: #872BFF;
+}
+
+#hero-content p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #8A8A8A;
+    margin-bottom: 30px;
+}
+
+#hero-image img {
+    width: 500px;
+    vertical-align: middle;
+}
+
+/* skill section */
+.card * {
+    margin-bottom: 20px;
+}
+
+#skill {
+    margin-bottom: 150px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.heading h4 {
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: #6A14DA;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.heading h2 {
+    font-size: 44px;
+}
+
+.card-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    /* border: 2px solid #1C1C1C; */
+    padding: 40px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 4px 4px 0 #00000025;
+    border-radius: 16px;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.card p {
+    font-size: 16px;
+    color: #0D1321;
+    line-height: 24px;
+}
+
+.card a {
+    color: #0D1321;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* project section */
+.project-content * {
+    margin-bottom: 20px;
+}
+
+#projects {
+    margin-bottom: 150px;
+}
+
+.project-card {
+    padding: 48px;
+    background-color: #FFFFFF;
+    border: 1px solid #872BFF;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.project-img img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.project-content h3 {
+    font-size: 30px;
+}
+
+.project-content p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #0E0E0E70;
+}
+
+/* EXPERIENCE section */
+#EXPERIENCE {
+    margin-bottom: 150px;
+}
+
+.company-card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.brands {
+    padding: 40px;
+    box-shadow: 0 4px 4px 0 #00000025;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* footer section */
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content p {
+    font-size: 16px;
+    color: #5B5757;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+}
+
+/* hidden section */
+.hidden {
+    display: none;
+}
+
+/* responesive dising */
+
+/* laptop device 1025-1200px */
+@media screen and (max-width:1200px) {
+    #hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #hero-content p {
+        font-size: 14px;
+    }
+}
+
+/* tablat device 769-1024px */
+@media screen and (max-width:1024px) {
+    #hero-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-btn {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #hero-image img {
+        width: 300px;
+    }
+
+    #hero-content {
+        padding-bottom: 0;
+    }
+
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .project-img img {
+        width: 250px;
+    }
+
+    .project-content * {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* android device landscape 569-768px */
+@media screen and (max-width:768px) {
+    .heading h2 {
+        font-size: 35px;
+    }
+    .project-card {
+        flex-direction: column;
+    }
+    .project-img img {
+        width: 100%;
+    }
+}
+
+/* android device potrait 320px*/
+@media screen and (max-width:568px) {
+    #hero-container {
+        width: 98%;
+    }
+
+    .hero-btn {
+        margin-right: 0px;
+    }
+
+    .hero-btn {
+        flex-direction: column;
+    }
+
+    #hero-image img {
+        width: 100%;
+    }
+
+    .heading h2 {
+        font-size: 19px;
+    }
+    .project-card {
+        padding: 10px;
+    }
+    .project-content {
+        text-align: center;
+    }
+    .company-card {
+        flex-direction: column;
+    }
+   .company-card img {
+    width: 100%;
+    max-width: 150px;
+   }
+   #hero-container {
+    padding: 0;
+   }
+   .btn {
+    margin-right: 0px;
+   }
+}
