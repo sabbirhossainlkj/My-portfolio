@@ -293,9 +293,11 @@ body {
     .heading h2 {
         font-size: 35px;
     }
+
     .project-card {
         flex-direction: column;
     }
+
     .project-img img {
         width: 100%;
     }
@@ -322,23 +324,29 @@ body {
     .heading h2 {
         font-size: 19px;
     }
+
     .project-card {
         padding: 10px;
     }
+
     .project-content {
         text-align: center;
     }
+
     .company-card {
         flex-direction: column;
     }
-   .company-card img {
-    width: 100%;
-    max-width: 150px;
-   }
-   #hero-container {
-    padding: 0;
-   }
-   .btn {
-    margin-right: 0px;
-   }
+
+    .company-card img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    #hero-container {
+        padding: 0;
+    }
+
+    .btn {
+        margin-right: 0px;
+    }
 }
